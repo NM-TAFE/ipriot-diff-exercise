@@ -50,25 +50,37 @@ This is a repo to help you practice diffing!
 
 Fill in what each of the elements of the diff mean (if you are not sure just guess!):
 **①**:
-> Insert your explanation here
+> Insert your explanation here:
+diff header: the files being compared are a/readme and b/readme 
 
 **②**:
-> Insert your answer here
+> Insert your answer here:
+
+not sure what the index is.
 
 **③**:
 > Insert your explanation here
+original file (-)
+
 
 **④**:
 > Insert your answer here
+section header - it is comparing the diff of lines 8-9 in the original with lines 8-12 in the new file. 
+
 
 **⑤**:
 > Insert your answer here
+this is an identical line (unchanged)
+
 
 **⑥**:
 > Insert your explanation here
+this line has been removed in the new file from the original and 3 additional lines added in the new file.
+
 
 **⑦**:
 > Insert your answer here
+carefully has been changed in the new file to remove the . inbetween. 
 
 
 Notice that the diff above only showed different **lines** in the file. Including whitespaces. We can also highlight changes at the word level with the --word-diff option:
@@ -103,6 +115,8 @@ See if you can guess the overall command to produce the above diffs:
 
 ```bash
 ? your guess is as good as mine
+
+git diff --word-diff
 ```
 
  ## Stashing
